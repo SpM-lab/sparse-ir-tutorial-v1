@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -55,13 +56,6 @@
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-RD8N0K0C9Y"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-RD8N0K0C9Y');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -82,6 +76,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -135,9 +138,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../index.html">
+  
   
   
   
@@ -152,8 +157,6 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="IR_py.html">Intermediate representation (IR)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sparse_sampling_py.html">Sparse sampling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DLR.html">Discrete Lehmann representation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matsubarasum.html">Summation over Matsubara axis</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
 <ul class="nav bd-sidenav">
@@ -164,37 +167,27 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="transformation_py.html">Transformation from/to IR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sparse_sampling_demo_py.html">Sparse sampling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DLR_py.html">Discrete Lehmann Representation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="second_order_perturbation_py.html">Second-order perturbation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GW_py.html">The GF2 &amp; GW method</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="DMFT_IPT_py.html">DMFT with IPT solver</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FLEX_py.html">FLEX approximation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TPSC_py.html">TPSC approximation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="eliashberg_holstein_py.html">Eliashberg theory for Holstein-Hubbard model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="orbital_magnetic_susceptibility_py.html">Orbital magnetic susceptibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="liechtenstein_py.html">Estimation of exchange interactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eliashberg_holstein_py.html">Eliashberg equation for Holstein Hubbard model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lichtenstein_formula_py.html">Lichtenstein formula</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Analytic continuation</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="analytic_continuation_py.html">Numerical analytic continuation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analytic_continuation.html">Numerical analytic continuation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spm_py.html">SpM analytic continuation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nevanlinna.html">Nevanlinna analytic continuation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample codes (Julia)</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="transformation_jl.html">Transformation from/to IR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sparse_sampling_demo_jl.html">Sparse sampling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DLR_jl.html">Discrete Lehmann Representation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DMFT_IPT_jl.html">DMFT calculation with IPT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FLEX_jl.html">FLEX approximation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="BgG_jl.html">Bogoliubov-de Gennes equations in real space</a></li>
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample codes (Fortran)</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="second_order_perturbation_fort.html">Second-order perturbation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="second_order_perturbation_fort.html">Second-order perturbation (Fortran)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
 <ul class="current nav bd-sidenav">
@@ -306,20 +299,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -371,10 +366,6 @@ document.write(`
 <span class="label"><span class="fn-bracket">[</span>BS89<span class="fn-bracket">]</span></span>
 <p>N.E Bickers and D.J Scalapino. Conserving approximations for strongly fluctuating electron systems. i. formalism and calculational approach. <em>Annals of Physics</em>, 193(1):206–251, 1989. URL: <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/000349168990359X">https://www.sciencedirect.com/science/article/pii/000349168990359X</a>, <a class="reference external" href="https://doi.org/https://doi.org/10.1016/0003-4916(89)90359-X">doi:https://doi.org/10.1016/0003-4916(89)90359-X</a>.</p>
 </div>
-<div class="citation" id="id51" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span>KCP22<span class="fn-bracket">]</span></span>
-<p>Jason Kaye, Kun Chen, and Olivier Parcollet. Discrete lehmann representation of imaginary time green's functions. <em>Phys. Rev. B</em>, 105:235115, Jun 2022. URL: <a class="reference external" href="https://link.aps.org/doi/10.1103/PhysRevB.105.235115">https://link.aps.org/doi/10.1103/PhysRevB.105.235115</a>, <a class="reference external" href="https://doi.org/10.1103/PhysRevB.105.235115">doi:10.1103/PhysRevB.105.235115</a>.</p>
-</div>
 <div class="citation" id="id3" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span>LWC+20<span class="fn-bracket">]</span></span>
 <p>Jia Li, Markus Wallerberger, Naoya Chikano, Chia-Nan Yeh, Emanuel Gull, and Hiroshi Shinaoka. Sparse sampling approach to efficient ab initio calculations at finite temperature. <em>Physical Review B</em>, 101(3):035144, 01 2020. <a class="reference external" href="https://doi.org/10.1103/physrevb.101.035144">doi:10.1103/physrevb.101.035144</a>.</p>
@@ -391,17 +382,9 @@ document.write(`
 <span class="label"><span class="fn-bracket">[</span>OOSY17<span class="fn-bracket">]</span></span>
 <p>Junya Otsuki, Masayuki Ohzeki, Hiroshi Shinaoka, and Kazuyoshi Yoshimi. Sparse modeling approach to analytical continuation of imaginary-time quantum Monte Carlo data. <em>Physical Review E</em>, 95(6):061302(R), 06 2017. URL: <a class="reference external" href="https://journals.aps.org/pre/pdf/10.1103/PhysRevE.95.061302">https://journals.aps.org/pre/pdf/10.1103/PhysRevE.95.061302</a>, <a class="reference external" href="https://doi.org/10.1103/physreve.95.061302">doi:10.1103/physreve.95.061302</a>.</p>
 </div>
-<div class="citation" id="id52" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span>SCG+21<span class="fn-bracket">]</span></span>
-<p>Hiroshi Shinaoka, Naoya Chikano, Emanuel Gull, Jia Li, Takuya Nomoto, Junya Otsuki, Markus Wallerberger, Tianchun Wang, and Kazuyoshi Yoshimi. Efficient ab initio many-body calculations based on sparse modeling of matsubara green's function. 2021. URL: <a class="reference external" href="https://arxiv.org/abs/2106.12685">https://arxiv.org/abs/2106.12685</a>, <a class="reference external" href="https://doi.org/10.48550/ARXIV.2106.12685">doi:10.48550/ARXIV.2106.12685</a>.</p>
-</div>
 <div class="citation" id="id24" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span>SOOY17<span class="fn-bracket">]</span></span>
 <p>Hiroshi Shinaoka, Junya Otsuki, Masayuki Ohzeki, and Kazuyoshi Yoshimi. Compressing Green's function using intermediate representation between imaginary-time and real-frequency domains. <em>Physical Review B</em>, 96(3):035147 – 8, 07 2017. URL: <a class="reference external" href="https://journals.aps.org/prb/pdf/10.1103/PhysRevB.96.035147">https://journals.aps.org/prb/pdf/10.1103/PhysRevB.96.035147</a>, <a class="reference external" href="https://doi.org/10.1103/physrevb.96.035147">doi:10.1103/physrevb.96.035147</a>.</p>
-</div>
-<div class="citation" id="id47" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span>Tre12<span class="fn-bracket">]</span></span>
-<p>André-Marie S. Tremblay. <em>Two-Particle-Self-Consistent Approach for the Hubbard Model</em>, pages 409–453. Springer Berlin Heidelberg, Berlin, Heidelberg, 2012. URL: <a class="reference external" href="https://doi.org/10.1007/978-3-642-21831-6_13">https://doi.org/10.1007/978-3-642-21831-6_13</a>, <a class="reference external" href="https://arxiv.org/abs/1107.1534">arXiv:1107.1534</a>, <a class="reference external" href="https://doi.org/10.1007/978-3-642-21831-6_13">doi:10.1007/978-3-642-21831-6_13</a>.</p>
 </div>
 <div class="citation" id="id46" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span>VT97<span class="fn-bracket">]</span></span>
@@ -444,11 +427,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="citation.html"
@@ -459,10 +441,7 @@ document.write(`
         <p class="prev-next-title">Citation</p>
       </div>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -478,13 +457,14 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By sparse-ir developers
+By Many authors
 </p>
 
   </div>
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -511,8 +491,8 @@ By sparse-ir developers
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>

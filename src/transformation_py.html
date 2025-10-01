@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -55,13 +56,6 @@
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-RD8N0K0C9Y"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-RD8N0K0C9Y');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -85,6 +79,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -138,9 +141,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../index.html">
+  
   
   
   
@@ -155,8 +160,6 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="IR_py.html">Intermediate representation (IR)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sparse_sampling_py.html">Sparse sampling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DLR.html">Discrete Lehmann representation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matsubarasum.html">Summation over Matsubara axis</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
 <ul class="nav bd-sidenav">
@@ -167,37 +170,27 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Transformation from/to IR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sparse_sampling_demo_py.html">Sparse sampling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DLR_py.html">Discrete Lehmann Representation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="second_order_perturbation_py.html">Second-order perturbation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GW_py.html">The GF2 &amp; GW method</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="DMFT_IPT_py.html">DMFT with IPT solver</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FLEX_py.html">FLEX approximation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TPSC_py.html">TPSC approximation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="eliashberg_holstein_py.html">Eliashberg theory for Holstein-Hubbard model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="orbital_magnetic_susceptibility_py.html">Orbital magnetic susceptibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="liechtenstein_py.html">Estimation of exchange interactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eliashberg_holstein_py.html">Eliashberg equation for Holstein Hubbard model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lichtenstein_formula_py.html">Lichtenstein formula</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Analytic continuation</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="analytic_continuation_py.html">Numerical analytic continuation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analytic_continuation.html">Numerical analytic continuation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spm_py.html">SpM analytic continuation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nevanlinna.html">Nevanlinna analytic continuation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample codes (Julia)</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="transformation_jl.html">Transformation from/to IR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sparse_sampling_demo_jl.html">Sparse sampling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DLR_jl.html">Discrete Lehmann Representation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DMFT_IPT_jl.html">DMFT calculation with IPT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FLEX_jl.html">FLEX approximation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="BgG_jl.html">Bogoliubov-de Gennes equations in real space</a></li>
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample codes (Fortran)</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="second_order_perturbation_fort.html">Second-order perturbation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="second_order_perturbation_fort.html">Second-order perturbation (Fortran)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
 <ul class="nav bd-sidenav">
@@ -257,7 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/src/transformation_py.ipynb" target="_blank"
+      <li><a href="../_sources/src/transformation_py.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -267,7 +260,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -309,20 +302,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -353,8 +348,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-smooth-spectral-function">From smooth spectral function</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-ir-to-imaginary-time">From IR to imaginary time</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-full-imaginary-time-data">From full imaginary-time data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remark-what-happens-if-omega-mathrm-max-is-too-small">Remark: What happens if <span class="math notranslate nohighlight">\(\omega_\mathrm{max}\)</span> is too small?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-valued-object">Matrix-valued object</a></li>
 </ul>
             </nav>
         </div>
@@ -380,7 +373,7 @@ document.write(`
 <p>We consider a Green’s function genereated by poles:</p>
 <div class="math notranslate nohighlight">
 \[
-G(\mathrm{i}\nu) = \sum_{p=1}^{N_\mathrm{P}} \frac{c_p}{\mathrm{i}\nu - \omega_p},
+G(\iv) = \sum_{p=1}^{N_\mathrm{P}} \frac{c_p}{\iv - \omega_p},
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(\nu\)</span> is a fermionic or bosonic Matsubara frequency.
 The corresponding specral function <span class="math notranslate nohighlight">\(A(\omega)\)</span> is given by</p>
@@ -410,11 +403,10 @@ We immediately obtain</p>
 <p>The following code demostrates this transformation for bosons.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sparse_ir</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sparse_ir</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">beta</span> <span class="o">=</span> <span class="mi">15</span>
 <span class="n">wmax</span> <span class="o">=</span> <span class="mi">10</span>
@@ -431,35 +423,54 @@ We immediately obtain</p>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$l$&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mf">1e-5</span><span class="p">,</span> <span class="mf">1e+1</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/2b8c5092f9846eed6b77170ce669b9d75b1434682f7e6294ea47e94e9f635fd9.png" src="../_images/2b8c5092f9846eed6b77170ce669b9d75b1434682f7e6294ea47e94e9f635fd9.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sparse_ir/basis.py:58: UserWarning: 
+Requested accuracy is 1e-10, which is below the
+accuracy 1e-08 for the work data type &lt;class &#39;numpy.float64&#39;&gt;.
+Expect singular values and basis functions for large l to
+have lower precision than the cutoff.
+Install the xprec package to gain more precision.
+
+  sve_result = sve.compute(self._kernel, eps)
+</pre></div>
+</div>
+<img alt="../_images/4a372a87445d879b45fcffe48931ead7b0460f6352a1367c4c2481d978bbd1d5.png" src="../_images/4a372a87445d879b45fcffe48931ead7b0460f6352a1367c4c2481d978bbd1d5.png" />
 </div>
 </div>
-<p>Alternatively, we can use <code class="docutils literal notranslate"><span class="pre">DiscreteLehmannRepresentation</span></code></p>
+<p>Alternatively, we can use <code class="docutils literal notranslate"><span class="pre">spr</span></code> (sparse pole presentation) module.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sparse_ir.dlr</span> <span class="kn">import</span> <span class="n">DiscreteLehmannRepresentation</span>
-<span class="n">dlr</span> <span class="o">=</span> <span class="n">DiscreteLehmannRepresentation</span><span class="p">(</span><span class="n">basis_b</span><span class="p">,</span> <span class="n">omega_p</span><span class="p">)</span>
-<span class="n">gl_pole2</span> <span class="o">=</span> <span class="n">dlr</span><span class="o">.</span><span class="n">to_IR</span><span class="p">(</span><span class="n">coeff</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="mf">0.5</span><span class="o">*</span><span class="n">beta</span><span class="o">*</span><span class="n">omega_p</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sparse_ir.spr</span><span class="w"> </span><span class="kn">import</span> <span class="n">SparsePoleRepresentation</span>
+<span class="n">sp</span> <span class="o">=</span> <span class="n">SparsePoleRepresentation</span><span class="p">(</span><span class="n">basis_b</span><span class="p">,</span> <span class="n">omega_p</span><span class="p">)</span>
+<span class="n">gl_pole2</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">to_IR</span><span class="p">(</span><span class="n">coeff</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">gl_pole2</span><span class="p">),</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$|g_l|$ from DLR&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">gl_pole2</span><span class="p">),</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$|g_l|$ from SPR&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">gl_pole</span><span class="p">),</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$|g_l|$&quot;</span><span class="p">)</span>
 
 
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$l$&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mf">1e-5</span><span class="p">,</span> <span class="mf">1e+1</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/256376267ee77f82e27609cf8597f5e18b1357669180041c3466557cd29c7bc2.png" src="../_images/256376267ee77f82e27609cf8597f5e18b1357669180041c3466557cd29c7bc2.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">sparse_ir.spr</span><span class="w"> </span><span class="kn">import</span> <span class="n">SparsePoleRepresentation</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">sp</span> <span class="o">=</span> <span class="n">SparsePoleRepresentation</span><span class="p">(</span><span class="n">basis_b</span><span class="p">,</span> <span class="n">omega_p</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">gl_pole2</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">to_IR</span><span class="p">(</span><span class="n">coeff</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;sparse_ir.spr&#39;
+</pre></div>
+</div>
 </div>
 </div>
 </section>
@@ -468,12 +479,14 @@ We immediately obtain</p>
 <p>For a smooth spectral function <span class="math notranslate nohighlight">\(\rho(\omega)\)</span>, the expansion coefficients can be evaluated by computing the integral</p>
 <div class="math notranslate nohighlight">
 \[
-    \rho_l = \int_{-\omega_\mathrm{max}}^{\omega_\mathrm{max}} \mathrm{d} \omega V_l(\omega) \rho(\omega).
+\begin{align}
+    \rho_l &amp;= \int_{-\wmax}^\wmax \dd \omega V_l(\omega) \rho(\omega).
+\end{align}
 \]</div>
 <p>One might consider to use the Gauss-Legendre quadrature.
 As seen in previous sections, the distribution of <span class="math notranslate nohighlight">\(V_l(\omega)\)</span> is much denser than Legendre polynomial <span class="math notranslate nohighlight">\(P_l(x(\tau))\)</span> around <span class="math notranslate nohighlight">\(\tau=0, \beta\)</span>.
 Thus, evaluating the integral precisely requires the use of composite Gauss–Legendre quadrature,
-where the whole inteval <span class="math notranslate nohighlight">\([-\omega_\mathrm{max}, \omega_\mathrm{max}]\)</span> is divided to subintervals and the normal Gauss-Legendre quadrature is
+where the whole inteval <span class="math notranslate nohighlight">\([-\wmax, \wmax]\)</span> is divided to subintervals and the normal Gauss-Legendre quadrature is
 applied to each interval.
 The roots of <span class="math notranslate nohighlight">\(V_l(\omega)\)</span> for the highest <span class="math notranslate nohighlight">\(l\)</span> used in the expansion
 is a reasonable choice of the division points.
@@ -498,9 +511,6 @@ Then, <span class="math notranslate nohighlight">\(\rho_l\)</span> can be transf
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/1489115b551f62c2ad322259699f015487022fd6a1ca401fc09024146a9d622a.png" src="../_images/1489115b551f62c2ad322259699f015487022fd6a1ca401fc09024146a9d622a.png" />
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -511,19 +521,14 @@ Then, <span class="math notranslate nohighlight">\(\rho_l\)</span> can be transf
 <span class="n">rhol</span> <span class="o">=</span> <span class="n">basis</span><span class="o">.</span><span class="n">v</span><span class="o">.</span><span class="n">overlap</span><span class="p">(</span><span class="n">rho</span><span class="p">)</span>
 <span class="n">gl</span> <span class="o">=</span> <span class="o">-</span> <span class="n">basis</span><span class="o">.</span><span class="n">s</span> <span class="o">*</span> <span class="n">rhol</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">rhol</span><span class="p">),</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$|\rho_l|$&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">gl</span><span class="p">),</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$|g_l|$&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">basis</span><span class="o">.</span><span class="n">s</span><span class="p">),</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$S_l$&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">rhol</span><span class="p">),</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$|\rho_l|$&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">gl</span><span class="p">),</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$|g_l|$&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$l$&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mf">1e-5</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mf">1e-5</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<span class="c1">#plt.savefig(&quot;coeff.pdf&quot;)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/1b422220d2a6934269d530fc246fd44aa866ad37f2e26f8b00be1a1daebd263a.png" src="../_images/1b422220d2a6934269d530fc246fd44aa866ad37f2e26f8b00be1a1daebd263a.png" />
 </div>
 </div>
 <p><span class="math notranslate nohighlight">\(\rho_l\)</span> is evaluated on arbitrary real frequencies as follows.</p>
@@ -533,13 +538,10 @@ Then, <span class="math notranslate nohighlight">\(\rho_l\)</span> can be transf
 
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\omega$&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\rho(\omega)$&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">omegas</span><span class="p">,</span> <span class="n">rho_omgea_reconst</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">omegas</span><span class="p">,</span> <span class="n">rho</span><span class="p">(</span><span class="n">omegas</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/63371fae30a78a0dc4a365a63c04bb4306b5f46061ee3d5fd09018437cc9b103.png" src="../_images/63371fae30a78a0dc4a365a63c04bb4306b5f46061ee3d5fd09018437cc9b103.png" />
 </div>
 </div>
 </section>
@@ -558,9 +560,6 @@ A naive way is as follows.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/a488c6f1e95ab30e3341516f205953016d07928afccc2b179347d6b4abe56713.png" src="../_images/a488c6f1e95ab30e3341516f205953016d07928afccc2b179347d6b4abe56713.png" />
-</div>
 </div>
 <p>Alternatively, we can use <code class="docutils literal notranslate"><span class="pre">TauSampling</span></code> as follows.</p>
 <div class="cell docutils container">
@@ -574,9 +573,6 @@ A naive way is as follows.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/a488c6f1e95ab30e3341516f205953016d07928afccc2b179347d6b4abe56713.png" src="../_images/a488c6f1e95ab30e3341516f205953016d07928afccc2b179347d6b4abe56713.png" />
-</div>
 </div>
 </section>
 <section id="from-full-imaginary-time-data">
@@ -585,102 +581,25 @@ A naive way is as follows.</p>
 is evaluating the integral</p>
 <div class="math notranslate nohighlight">
 \[
-G_l = \int_0^\beta \mathrm{d} \tau G(\tau) U_l(\tau).
+G_l = \int_0^\beta \dd \tau G(\tau) U_l(\tau).
 \]</div>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">overlap</span></code> function as well.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">eval_gtau</span><span class="p">(</span><span class="n">taus</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">eval_gtau</span><span class="p">(</span><span class="n">taus</span><span class="p">):</span>
     <span class="n">uval</span> <span class="o">=</span> <span class="n">basis</span><span class="o">.</span><span class="n">u</span><span class="p">(</span><span class="n">taus</span><span class="p">)</span> <span class="c1">#(nl, ntau)</span>
-    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">taus</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
-       <span class="nb">print</span><span class="p">(</span><span class="n">uval</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">gl</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-       <span class="k">return</span> <span class="n">uval</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">gl</span>
-    <span class="k">else</span><span class="p">:</span>
-       <span class="k">return</span> <span class="n">uval</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">gl</span>
+    <span class="k">return</span> <span class="n">uval</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">gl</span>
 
 <span class="n">gl_reconst</span> <span class="o">=</span> <span class="n">basis</span><span class="o">.</span><span class="n">u</span><span class="o">.</span><span class="n">overlap</span><span class="p">(</span><span class="n">eval_gtau</span><span class="p">)</span>
 
-<span class="n">ls</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">basis</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">ls</span><span class="p">[::</span><span class="mi">2</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">gl_reconst</span><span class="p">)[::</span><span class="mi">2</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;reconstructed&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">ls</span><span class="p">[::</span><span class="mi">2</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">gl</span><span class="p">)[::</span><span class="mi">2</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;exact&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">ls</span><span class="p">[::</span><span class="mi">2</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">gl_reconst</span> <span class="o">-</span> <span class="n">gl</span><span class="p">)[::</span><span class="mi">2</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;p&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">gl_reconst</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;reconstructed&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">gl</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;exact&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">gl_reconst</span> <span class="o">-</span> <span class="n">gl</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$l$&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$|g_l|$&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mf">1e-20</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/81a29242761760f4b2af38b606170dedf5a1c9b7acc5c1fc26e9b5b3d5e3c3ca.png" src="../_images/81a29242761760f4b2af38b606170dedf5a1c9b7acc5c1fc26e9b5b3d5e3c3ca.png" />
-</div>
-</div>
-</section>
-<section id="remark-what-happens-if-omega-mathrm-max-is-too-small">
-<h2>Remark: What happens if <span class="math notranslate nohighlight">\(\omega_\mathrm{max}\)</span> is too small?<a class="headerlink" href="#remark-what-happens-if-omega-mathrm-max-is-too-small" title="Permalink to this heading">#</a></h2>
-<p>If <span class="math notranslate nohighlight">\(G_l\)</span> do not decay like <span class="math notranslate nohighlight">\(S_l\)</span>,  <span class="math notranslate nohighlight">\(\omega_\mathrm{max}\)</span> may be too small.
-Below, we numerically demonstrate it.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad</span>
-
-<span class="n">beta</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">wmax</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">basis_bad</span> <span class="o">=</span> <span class="n">sparse_ir</span><span class="o">.</span><span class="n">FiniteTempBasis</span><span class="p">(</span><span class="s2">&quot;F&quot;</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">wmax</span><span class="p">,</span> <span class="n">eps</span><span class="o">=</span><span class="mf">1e-10</span><span class="p">)</span>
-
-<span class="c1"># We expand G(τ).</span>
-<span class="n">gl_bad</span> <span class="o">=</span> <span class="p">[</span><span class="n">quad</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">eval_gtau</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">*</span> <span class="n">basis_bad</span><span class="o">.</span><span class="n">u</span><span class="p">[</span><span class="n">l</span><span class="p">](</span><span class="n">x</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="n">beta</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">basis_bad</span><span class="o">.</span><span class="n">size</span><span class="p">)]</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">gl_bad</span><span class="p">),</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$|g_l|$&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">basis_bad</span><span class="o">.</span><span class="n">s</span><span class="p">),</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$S_l$&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$l$&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mf">1e-5</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
-<span class="c1">#plt.xlim([0, basis.size])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<span class="c1">#plt.savefig(&quot;coeff_bad.pdf&quot;)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/891f14c8dd3b8efdc82036ec72b9e6fad80191fbf12b0bf5df57a171d98fff7e.png" src="../_images/891f14c8dd3b8efdc82036ec72b9e6fad80191fbf12b0bf5df57a171d98fff7e.png" />
-</div>
-</div>
-</section>
-<section id="matrix-valued-object">
-<h2>Matrix-valued object<a class="headerlink" href="#matrix-valued-object" title="Permalink to this heading">#</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">evaluate</span></code> and <code class="docutils literal notranslate"><span class="pre">fit</span></code> accept a matrix-valued object as an input.
-The axis to which the transformation applied can be specified by using the keyword augment <code class="docutils literal notranslate"><span class="pre">axis</span></code>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">gl_tensor</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="o">*</span><span class="n">shape</span><span class="p">)[</span><span class="o">...</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span> <span class="o">*</span> <span class="n">gl</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">,</span> <span class="p">:]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;gl: &quot;</span><span class="p">,</span> <span class="n">gl</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;gl_tensor: &quot;</span><span class="p">,</span> <span class="n">gl_tensor</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>gl:  (30,)
-gl_tensor:  (1, 2, 3, 30)
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">smpl_matsu</span> <span class="o">=</span> <span class="n">sparse_ir</span><span class="o">.</span><span class="n">MatsubaraSampling</span><span class="p">(</span><span class="n">basis</span><span class="p">)</span>
-<span class="n">gtau_tensor</span> <span class="o">=</span> <span class="n">smpl_matsu</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">gl_tensor</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;gtau_tensor: &quot;</span><span class="p">,</span> <span class="n">gtau_tensor</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="n">gl_tensor_reconst</span> <span class="o">=</span> <span class="n">smpl_matsu</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">gtau_tensor</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">gl_tensor</span><span class="p">,</span> <span class="n">gl_tensor_reconst</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>gtau_tensor:  (1, 2, 3, 30)
 </pre></div>
 </div>
 </div>
@@ -713,11 +632,10 @@ gl_tensor:  (1, 2, 3, 30)
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="additional_material.html"
@@ -737,10 +655,7 @@ gl_tensor:  (1, 2, 3, 30)
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -759,8 +674,6 @@ gl_tensor:  (1, 2, 3, 30)
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-smooth-spectral-function">From smooth spectral function</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-ir-to-imaginary-time">From IR to imaginary time</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-full-imaginary-time-data">From full imaginary-time data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remark-what-happens-if-omega-mathrm-max-is-too-small">Remark: What happens if <span class="math notranslate nohighlight">\(\omega_\mathrm{max}\)</span> is too small?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-valued-object">Matrix-valued object</a></li>
 </ul>
   </nav></div>
 
@@ -775,13 +688,14 @@ gl_tensor:  (1, 2, 3, 30)
   <div class="footer-item">
     
 <p class="component-author">
-By sparse-ir developers
+By Many authors
 </p>
 
   </div>
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -808,8 +722,8 @@ By sparse-ir developers
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -1,10 +1,5 @@
 # sparse-ir
 
-## Author guideline
-
-* In Markdown cells, use the `$$`, `$$ $$` environments for equations.
-* References are listed in the markdown cell at the bottom of each notebook.
-* Remove all outputs in a jupyter notebook.
 
 ## Set up tools
 
@@ -12,48 +7,57 @@
 pip3 install jupyter-book ghp-import jupytext
 ```
 
-## Set up VS code + Docker
-We strongly recommend to use VSCode + Docker to build HTML files.
+## How to build html
 
-1. Make sure you have Docker and VSCode installed.
+1. Write a jupyter notebook. Your notebook must be placed under the  `src` directory with a name `*_py.ipynb` (python) or `*_jl.ipyb` (julia).
 
-2. Install the ``Remote - Containers`` in VSCode Extensions.
+2. Convert the notebook to a paired MyST markdown file.
 
-3. Go to the repository and open it in VS Code.
-
-```
-cd /path/to/this/repository
-
-code .
+```bash
+jupytext --sync --to md:myst notebook_py.ipynb
 ```
 
-4. To use Docker with VS Code, execute the following command.
+3. Make html files
 
-```
-ln -s .dev/devcontainer .devcontainer
-```
-
-5. Press the green mark at the bottom left and press `` Reopen in Container`` from the command palette.
-   After the build is finished, you can enter the Docker container.
-
-6. Build html files
-
-The following command builds html files, which takes a few minutes.
+The following command builds html files. 
 
 ```bash
 make build
 ```
 
-7. Upload html files
+## Update existing MyST Markdown file
+
+1. Convert a MyST markdown file to a notebook:
+
+```bash
+jupytext --to ipynb notebook_py.md
+```
+
+2. Update the notebook using jupyter notebook/lab
+
+3. Sync the markdown file and the notebook.
+
+```bash
+jupytext --sync --to md:myst notebook_py.ipynb
+```
+
+
+## How to commit a new/updated Markdown file
+
+Before commiting a new MyST Markdown file, update the header of all Markdown files:
+
+```bash
+make update_header
+```
+
+Then, you will be ready to commit updated files.
+
+
+## Upload html files
 
 ```bash
 make upload
 ```
-
-## Update the specified versions of `sparse-ir`, `xprec`, `SparseIR.jl`
-* For Python, edit `requirements.txt` manually.
-* For Julia, use the package mode to update the package. Note that in the container, the `julia` command is aliased to `julia --project=@.`.
-
 
 ## References
 You can add references to `references.bib`.

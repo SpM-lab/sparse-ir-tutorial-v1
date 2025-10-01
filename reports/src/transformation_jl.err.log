@@ -1,37 +1,61 @@
 Traceback (most recent call last):
-  File "/home/jovyan/.venv/default/lib/python3.11/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 154, in wrapped
+    asyncio.get_running_loop()
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
     executenb(
-  File "/home/jovyan/.venv/default/lib/python3.11/site-packages/nbclient/client.py", line 1305, in execute
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/nbclient/client.py", line 1305, in execute
     return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/jovyan/.venv/default/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 166, in wrapped
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 158, in wrapped
     return loop.run_until_complete(inner)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
     return future.result()
-           ^^^^^^^^^^^^^^^
-  File "/home/jovyan/.venv/default/lib/python3.11/site-packages/nbclient/client.py", line 705, in async_execute
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/nbclient/client.py", line 705, in async_execute
     await self.async_execute_cell(
-  File "/home/jovyan/.venv/default/lib/python3.11/site-packages/nbclient/client.py", line 1058, in async_execute_cell
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/nbclient/client.py", line 1058, in async_execute_cell
     await self._check_raise_for_error(cell, cell_index, exec_reply)
-  File "/home/jovyan/.venv/default/lib/python3.11/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-smpl = TauSampling(basis, taus)
-gtau2 = evaluate(smpl, gl)
-plot(taus, gtau2, xlabel=latexstring("\\tau"), ylabel=latexstring("G(\\tau)"), label=nothing, marker=:cross)
+using SparseIR
+#ENV["MPLBACKEND"]="tkagg"
+using PyPlot
+using OMEinsum
+
+
+beta = 15
+wmax = 10
+basis_b = FiniteTempBasis(boson, beta, wmax, 1e-7)
+
+coeff = [1.0]
+omega_p = [0.1]
+
+rhol_pole = ein"lp,p->l"(
+    basis_b.v(omega_p),
+    coeff ./ tanh.(0.5*beta*omega_p)
+)
+gl_pole = - basis_b.s .* rhol_pole
+
+plt.semilogy(abs.(rhol_pole), marker="o", label=L"|\rho_l|")
+plt.semilogy(abs.(gl_pole), marker="x", label=L"|g_l|")
+
+plt.xlabel(L"$l$")
+plt.ylim([1e-5, 1e+1])
+plt.legend()
+;
 ------------------
 
 
-MethodError: no method matching TauSampling(::FiniteTempBasis{Fermionic, LogisticKernel}, ::Vector{Float64})
-
-[0mClosest candidates are:
-[0m  TauSampling(::SparseIR.AbstractBasis; sampling_points)
-[0m[90m   @[39m [35mSparseIR[39m [90m~/.julia/packages/SparseIR/KrYmQ/src/[39m[90m[4msampling.jl:23[24m[39m
+ArgumentError: Package OMEinsum not found in current path:
+- Run `import Pkg; Pkg.add("OMEinsum")` to install the OMEinsum package.
 
 
 Stacktrace:
- [1] top-level scope
-   @ In[7]:1
+ [1] require(into::Module, mod::Symbol)
+   @ Base ./loading.jl:967
 

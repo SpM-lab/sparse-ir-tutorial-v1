@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -55,13 +56,6 @@
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-RD8N0K0C9Y"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-RD8N0K0C9Y');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -73,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'src/sparse_sampling_py';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Discrete Lehmann representation" href="DLR.html" />
+    <link rel="next" title="API reference" href="api.html" />
     <link rel="prev" title="Intermediate representation (IR)" href="IR_py.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -85,6 +79,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -138,9 +141,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../index.html">
+  
   
   
   
@@ -155,8 +160,6 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="IR_py.html">Intermediate representation (IR)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Sparse sampling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DLR.html">Discrete Lehmann representation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matsubarasum.html">Summation over Matsubara axis</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
 <ul class="nav bd-sidenav">
@@ -167,37 +170,27 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="transformation_py.html">Transformation from/to IR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sparse_sampling_demo_py.html">Sparse sampling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DLR_py.html">Discrete Lehmann Representation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="second_order_perturbation_py.html">Second-order perturbation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GW_py.html">The GF2 &amp; GW method</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="DMFT_IPT_py.html">DMFT with IPT solver</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FLEX_py.html">FLEX approximation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TPSC_py.html">TPSC approximation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="eliashberg_holstein_py.html">Eliashberg theory for Holstein-Hubbard model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="orbital_magnetic_susceptibility_py.html">Orbital magnetic susceptibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="liechtenstein_py.html">Estimation of exchange interactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eliashberg_holstein_py.html">Eliashberg equation for Holstein Hubbard model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lichtenstein_formula_py.html">Lichtenstein formula</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Analytic continuation</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="analytic_continuation_py.html">Numerical analytic continuation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analytic_continuation.html">Numerical analytic continuation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spm_py.html">SpM analytic continuation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nevanlinna.html">Nevanlinna analytic continuation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample codes (Julia)</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="transformation_jl.html">Transformation from/to IR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sparse_sampling_demo_jl.html">Sparse sampling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DLR_jl.html">Discrete Lehmann Representation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DMFT_IPT_jl.html">DMFT calculation with IPT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FLEX_jl.html">FLEX approximation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="BgG_jl.html">Bogoliubov-de Gennes equations in real space</a></li>
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample codes (Fortran)</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="second_order_perturbation_fort.html">Second-order perturbation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="second_order_perturbation_fort.html">Second-order perturbation (Fortran)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
 <ul class="nav bd-sidenav">
@@ -257,7 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/src/sparse_sampling_py.ipynb" target="_blank"
+      <li><a href="../_sources/src/sparse_sampling_py.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -267,7 +260,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -309,26 +302,26 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -344,14 +337,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condition-number">Condition number</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -379,14 +364,14 @@ document.write(`
 The idea of the sparse sampling is simple.
 If we want to determine <span class="math notranslate nohighlight">\(L\)</span> coefficients <span class="math notranslate nohighlight">\(G_l\)</span>,
 we need to know <span class="math notranslate nohighlight">\(G(\tau)\)</span> on only up to <span class="math notranslate nohighlight">\(L\)</span> sampling points.
-Let <span class="math notranslate nohighlight">\(\bar{\tau}_1 &lt; \cdots &lt; \bar{\tau}_{N_\mathrm{smpl}}\)</span> (<span class="math notranslate nohighlight">\(N_\mathrm{smpl}\ge L\)</span>) be such sampling points,
+Let <span class="math notranslate nohighlight">\(\bar{\tau}_1 &lt; \cdots &lt; \bar{\tau}_{N_\mathrm{smp}}\)</span> (<span class="math notranslate nohighlight">\(N_\mathrm{smpl}\ge L\)</span>) be such sampling points,
 one can evaluate the expansion coefficients as</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align}
-    G_l &amp;= \underset{G_l}{\mathrm{argmin}}
-        \sum_k \bigg| G(\tauk) - \sum_{l=0}^{N_\mathrm{smpl}-1} U_l(\tauk)G_l \bigg|^2\nonumber \\
-    &amp;= (\Fmat^+ \boldsymbol{G})_l,
+    g_l &amp;= \underset{g_l}{\mathrm{argmin}}
+        \sum_k \bigg| G(\tauk) - \sum_{l=0}^{N_\mathrm{smp}-1} U_l(\tauk)G_l \bigg|^2\nonumber \\
+    &amp;= (\Fmat^+ \boldsymbol{g})_l,
 \end{align}
 \end{split}\]</div>
 <p>where we define <span class="math notranslate nohighlight">\((\Fmat)_{kl} = U_l(\tauk)\)</span> and <span class="math notranslate nohighlight">\(\Fmat^+\)</span> is its pseudo inverse.
@@ -403,11 +388,10 @@ From experience, the fitting can be done in the most stable way using SVD of the
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sparse_ir</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sparse_ir</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">beta</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">wmax</span> <span class="o">=</span> <span class="mi">10</span>
@@ -429,28 +413,38 @@ From experience, the fitting can be done in the most stable way using SVD of the
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/2da349248e871783fcf741fa580f56652dedd56670d6fbaa6520adfb00be3633.png" src="../_images/2da349248e871783fcf741fa580f56652dedd56670d6fbaa6520adfb00be3633.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/sparse_ir/basis.py:58: UserWarning: 
+Requested accuracy is 1e-10, which is below the
+accuracy 1e-08 for the work data type &lt;class &#39;numpy.float64&#39;&gt;.
+Expect singular values and basis functions for large l to
+have lower precision than the cutoff.
+Install the xprec package to gain more precision.
+
+  sve_result = sve.compute(self._kernel, eps)
+</pre></div>
+</div>
+<img alt="../_images/aaa1cd69052a48921eec6f135e02d21a1dbb380dfd30d0cc23ce3b160116b856.png" src="../_images/aaa1cd69052a48921eec6f135e02d21a1dbb380dfd30d0cc23ce3b160116b856.png" />
 </div>
 </div>
 <p>One can transform numerical data in the Matsubara-frequency domain using sparse-sampling techniques <span id="id1">[<a class="reference internal" href="bibliography.html#id3" title="Jia Li, Markus Wallerberger, Naoya Chikano, Chia-Nan Yeh, Emanuel Gull, and Hiroshi Shinaoka. Sparse sampling approach to efficient ab initio calculations at finite temperature. Physical Review B, 101(3):035144, 01 2020. doi:10.1103/physrevb.101.035144.">Li <em>et al.</em>, 2020</a>]</span>.
 The IR basis functions <span class="math notranslate nohighlight">\(\hat U_l(\iv)\)</span> are purely imaginary/real for even/odd <span class="math notranslate nohighlight">\(l\)</span>.
 Although the basis functions <span class="math notranslate nohighlight">\(U_l(\iv)\)</span> are defined only on discrete points,
 the respective parts have sign structures similarly to those of <span class="math notranslate nohighlight">\(U_l(\tau)\)</span>.
-The figure shown below shows the basis functions for the largest <span class="math notranslate nohighlight">\(l\)</span> of the given basis
+The figure shown below shows the basis functions for the largest <span class="math notranslate nohighlight">\(l\)</span>
 as well as the corresponding sampling frequencies.
 A sign change generally takes place between two adjacent Matsubara frequencies.
 A segment between two adjacent “roots” contains at least one sampling points.
 In the upper panel, you can see that the last segment at high frequencies contains two sampling points.
 This improves the condition number slighly.</p>
-<p>Let <span class="math notranslate nohighlight">\(\bar{\nu}_1 &lt; \cdots &lt; \bar{\nu}_{N_\mathrm{smpl}}\)</span> (<span class="math notranslate nohighlight">\(N_\mathrm{smpl}\ge L\)</span>)
+<p>Let <span class="math notranslate nohighlight">\(\bar{\nu}_1 &lt; \cdots &lt; \bar{\nu}_{N_\mathrm{smp}}\)</span> (<span class="math notranslate nohighlight">\(N_\mathrm{smpl}\ge L\)</span>)
 be such sampling frequencies,
 one can evaluate the expansion coefficients as</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align}
-    G_l &amp;= \underset{G_l}{\mathrm{argmin}}
-        \sum_k \bigg| \hat G(\ii\vk) - \sum_{l=0}^{N_\mathrm{smpl}-1} \hat{U}_l(\ii\vk)G_l \bigg|^2\nonumber \\
-    &amp;= (\hat{\Fmat}^+ \boldsymbol{G})_l.
+    g_l &amp;= \underset{g_l}{\mathrm{argmin}}
+        \sum_k \bigg| \hat G(\ii\vk) - \sum_{l=0}^{N_\mathrm{smp}-1} \hat{U}_l(\ii\vk)G_l \bigg|^2\nonumber \\
+    &amp;= (\hat{\Fmat}^+ \boldsymbol{g})_l.
 \end{align}
 \end{split}\]</div>
 <p>The following figure shows the sampling points in the imaginary-frequency domain generated for <span class="math notranslate nohighlight">\(\beta=10\)</span> and <span class="math notranslate nohighlight">\(\wmax=10\)</span>.</p>
@@ -481,7 +475,7 @@ one can evaluate the expansion coefficients as</p>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\nu$&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Re/Im $U_l(\mathrm</span><span class="si">{i}</span><span class="s2">\nu)$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Re/Im $G(\mathrm</span><span class="si">{i}</span><span class="s2">\nu)$&quot;</span><span class="p">)</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mf">0.5</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">beta</span><span class="p">,</span> <span class="kc">None</span><span class="p">])</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
@@ -494,42 +488,9 @@ one can evaluate the expansion coefficients as</p>
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/e0cdc07e2986f3b450c5a9fc0b0b119f0743246040dbe85e6ff0de2ffd62cb4b.png" src="../_images/e0cdc07e2986f3b450c5a9fc0b0b119f0743246040dbe85e6ff0de2ffd62cb4b.png" />
+<img alt="../_images/99c2d4508c5ffaf6ab2d0750d1840626811cb91026329dfda64cb1f0fae2c6e4.png" src="../_images/99c2d4508c5ffaf6ab2d0750d1840626811cb91026329dfda64cb1f0fae2c6e4.png" />
 </div>
 </div>
-<section id="condition-number">
-<h2>Condition number<a class="headerlink" href="#condition-number" title="Permalink to this heading">#</a></h2>
-<p>The condition number of the fitting scales roughly as <span class="math notranslate nohighlight">\(\sqrt{\Lambda}\)</span>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cond_tau</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">cond_matsu</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">lambdas</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1e+1</span><span class="p">,</span> <span class="mf">1e+2</span><span class="p">,</span> <span class="mf">1e+3</span><span class="p">,</span> <span class="mf">1e+4</span><span class="p">,</span> <span class="mf">1e+5</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">lambda_</span> <span class="ow">in</span> <span class="n">lambdas</span><span class="p">:</span>
-    <span class="n">basis</span> <span class="o">=</span> <span class="n">sparse_ir</span><span class="o">.</span><span class="n">FiniteTempBasis</span><span class="p">(</span><span class="s2">&quot;F&quot;</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">lambda_</span><span class="o">/</span><span class="n">beta</span><span class="p">,</span> <span class="n">eps</span><span class="o">=</span><span class="mf">1e-15</span><span class="p">)</span>
-    <span class="n">cond_tau</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sparse_ir</span><span class="o">.</span><span class="n">TauSampling</span><span class="p">(</span><span class="n">basis</span><span class="p">)</span><span class="o">.</span><span class="n">cond</span><span class="p">)</span>
-    <span class="n">cond_matsu</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sparse_ir</span><span class="o">.</span><span class="n">MatsubaraSampling</span><span class="p">(</span><span class="n">basis</span><span class="p">)</span><span class="o">.</span><span class="n">cond</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">loglog</span><span class="p">(</span><span class="n">lambdas</span><span class="p">,</span> <span class="n">cond_tau</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">loglog</span><span class="p">(</span><span class="n">lambdas</span><span class="p">,</span> <span class="n">cond_matsu</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;frequency&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">loglog</span><span class="p">(</span><span class="n">lambdas</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">lambdas</span><span class="p">),</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$\sqrt{\Lambda}$&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\Lambda$&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Condition number&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/91c32f1802a834bedf5a4e89df6ce66c6aca1591fcfd814b84bf43747c4f7544.png" src="../_images/91c32f1802a834bedf5a4e89df6ce66c6aca1591fcfd814b84bf43747c4f7544.png" />
-</div>
-</div>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -557,11 +518,10 @@ one can evaluate the expansion coefficients as</p>
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="IR_py.html"
@@ -573,37 +533,20 @@ one can evaluate the expansion coefficients as</p>
       </div>
     </a>
     <a class="right-next"
-       href="DLR.html"
+       href="api.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Discrete Lehmann representation</p>
+        <p class="prev-next-title">API reference</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condition-number">Condition number</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
@@ -614,13 +557,14 @@ one can evaluate the expansion coefficients as</p>
   <div class="footer-item">
     
 <p class="component-author">
-By sparse-ir developers
+By Many authors
 </p>
 
   </div>
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -647,8 +591,8 @@ By sparse-ir developers
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
