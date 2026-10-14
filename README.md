@@ -1,4 +1,9 @@
-# sparse-ir
+# sparse-ir tutorial (v1, archived)
+
+> **Archived.** This is the tutorial for sparse-ir v1 and is no longer maintained.
+> Use the current tutorial at <https://spm-lab.github.io/sparse-ir-tutorial/>
+> (Python `sparse-ir` 2.x, Julia `SparseIR.jl` 2.x).
+> Overview of the SpM-lab software: <https://spm-lab.github.io/>.
 
 ## Author guideline
 
